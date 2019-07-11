@@ -1,4 +1,5 @@
 import React from 'react'
+import ScoreHeader from './components/ScoreHeader'
 import Card from './components/Card'
 import Wrapper from './components/Wrapper'
 import cards from './cards.json'
@@ -7,7 +8,8 @@ import './App.css'
 function App () {
   return (
     <Wrapper>
-      <h1 className='Title'>Memory Game</h1>
+      <ScoreHeader />
+      <h1 className='Title'>CLICK</h1>
       <Card name={cards[0].name} image={cards[0].image} />
       <Card name={cards[1].name} image={cards[1].image} />
       <Card name={cards[2].name} image={cards[2].image} />
