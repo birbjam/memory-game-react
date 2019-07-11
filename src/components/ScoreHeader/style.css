@@ -1,12 +1,16 @@
 .header {
-  background: #f9b713;
+  background:#ffeeed;
   height: 200px;
 }
 
-.header h1 {
+.title {
   margin: 0;
   padding-top: 75px;
   text-align: center;
-  color: white;
+  color: #62554a;
   font-size: 3rem;
+}
+
+.score {
+  color: #50342b;
 }

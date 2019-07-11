@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 import './style.css'
 
-function ScoreHeader () {
-  return (
-    <header className='header'>
-      <h1>Clicky Memory Game</h1>
-    </header>
-  )
-}
+const ScoreHeader = (props) => (
+  <div className='header'>
+    <div className='title'>{props.children}</div>
+    <div className='score'>
+      Score: {props.score} | Top Score: {props.topscore}
+    </div>
+  </div>
+)
 
 export default ScoreHeader
