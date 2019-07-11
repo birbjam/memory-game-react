@@ -8,5 +8,4 @@ A React game application where the user clicks on various Pusheen images and col
 - React.js
 - CSS
 
-## Heroku Link
-Coming soon
+## Heroku [Link](https://pusheen-memory-game.herokuapp.com/)
