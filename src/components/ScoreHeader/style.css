@@ -5,12 +5,15 @@
 
 .title {
   margin: 0;
-  padding-top: 75px;
+  padding-top: 65px;
   text-align: center;
   color: #62554a;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .score {
   color: #50342b;
+  text-align: center;
+  font-size: 1.5em;
 }

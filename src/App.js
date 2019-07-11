@@ -45,8 +45,13 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <ScoreHeader>CLICK</ScoreHeader>
+      <div className="App">
+        <ScoreHeader 
+          className="title" 
+          score={this.state.score} 
+          topscore={this.state.topscore} 
+          message={this.state.message}>clicky memory game</ScoreHeader>
+        <Wrapper>
         {this.state.cards.map(card => (
             <GameCard
               clickpic={this.clickpic}
@@ -57,6 +62,7 @@ class App extends Component {
             />
           ))}
         </Wrapper>
+        </div>
     );
   }
 }

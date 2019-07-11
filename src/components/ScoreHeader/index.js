@@ -7,6 +7,7 @@ const ScoreHeader = (props) => (
     <div className='score'>
       Score: {props.score} | Top Score: {props.topscore}
     </div>
+    <div className='message'>{props.message}</div>
   </div>
 )
 
