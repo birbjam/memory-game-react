@@ -30,16 +30,21 @@ class App extends Component {
       this.setState({
         score: 0,
         clickCardArray: [],
-        message: "Game Over! Click on another image to restart!"
+        message: "GAME OVER! Click on another image to restart!"
       });
     } else {
       this.setState({
         clickCardArray: this.state.clickCardArray.concat([id]),
-        score: this.state.score + 1
+        score: this.state.score + 1,
+        message: ""
       });
     }
     if (this.state.score > this.state.topscore) {
       this.setState({ topscore: this.state.score });
+    }
+
+    if (this.state.score === 11) {
+      this.setState({ message: "YOU WON! You clicked on each image only once!"})
     }
   };
 
