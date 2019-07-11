@@ -3,6 +3,7 @@ import ScoreHeader from './components/ScoreHeader'
 import GameCard from './components/Card'
 import Wrapper from './components/Wrapper'
 import cards from './cards.json'
+import Footer from './components/Footer'
 import './App.css'
 
 class App extends Component {
@@ -67,6 +68,8 @@ class App extends Component {
             />
           ))}
         </Wrapper>
+        <Footer />
+
         </div>
     );
   }
